@@ -1,0 +1,98 @@
+.wrapper{
+  max-width: 70rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+
+  display: grid;
+  grid-template-columns: 256px 1fr;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.commentList{
+  margin-top: 2rem;
+}
+
+@media(max-width:768px){
+  html{
+      font-size: 87.5%;
+  }
+  .wrapper{
+      grid-template-columns: 1fr;
+  }
+}
+.taskInfo{
+  border-radius: 8px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+}
+.tasksCreate{
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    border: 0;
+    display: block;
+    color:  var(--blue-Dark);
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 1rem;
+    transition: background-color 0.1s;
+}
+
+.tasksCreate > span{
+  background: var(--gray-400);
+  border-radius: 8px;
+    border: 0;
+  color:  var(--white);
+  margin-left: 0.25rem;
+padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+
+ }
+
+
+ .tasksOut{
+  padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    border: 0;    
+    color:  var(--purple-Dark);
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 1rem;
+    transition: background-color 0.1s;
+ }
+
+ .tasksOut > span{
+  background: var(--gray-400);
+  border-radius: 8px;
+    border: 0;
+  color:  var(--white);
+  margin-left: 0.25rem;  
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+ }
+
+ .tasksNull{
+  color:  var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .tasksNullSpanImg{
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin-top: 2rem;
+ }
+ .tasksNullSpanPrincipal{
+  display: block;  
+  line-height: 1.6;
+  font-weight: bold;
+  font-size: 1rem;
+ }
+ .tasksNullSpanSecundario{
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.6;
+ }
