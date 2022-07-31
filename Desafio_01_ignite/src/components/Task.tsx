@@ -34,7 +34,10 @@ export function Task({task, onDeleteTask, onUpdateTask}: TaskProps){
                     >
                     {task.isConcluido ? <CheckCircle size={24} weight="fill"/> : <Circle size={24} />}
                     </button>
-                    <p>{task.descricao}</p>
+                    <p 
+                    className={task.isConcluido ? styles.taskContentDescriptionOut : styles.taskContentDescription}>
+                        {task.descricao}
+                    </p>
                     <button 
                         className={styles.deletar}
                         onClick={handleDeleteTask} 

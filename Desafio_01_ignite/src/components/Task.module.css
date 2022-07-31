@@ -50,9 +50,14 @@
     border-radius: 2px;
 }
 
-.taskContent p{
+.taskContentDescription{
     color: var(--white);
     text-align: left;    
+}
+.taskContentDescriptionOut{
+    color: var(--white);
+    text-align: left;    
+    text-decoration: line-through;
 }
 
 
